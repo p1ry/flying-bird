@@ -1,7 +1,6 @@
-// initialize Kaboom
 kaboom({
-  global: true, // import all functions into global namespace
-  fullscreen: true, // render across entire browser window
+  global: true, 
+  fullscreen: true, 
 })
 
 const JUMP_FORCE = 300
@@ -30,7 +29,7 @@ scene("main", () => {
     sprite("bird"),
     scale(0.08),
     pos(80, 80),
-    body(), // implements gravity on the object
+    body(), 
   ])
 
   keyPress("space", () => {
