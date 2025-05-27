@@ -17,7 +17,7 @@ const DIST_BTWN_PIPES = height() / 4
 loadSprite("bird", "sprites/bird.png")
 loadSprite("pipe", "sprites/pipe.png")
 loadSprite("background", "sprites/ocean.jpg")
-loadSprite("gameover.bg", "sprites/gameover.bg.png")
+loadSprite("gameover_bg", "sprites/gameover_bg.png")
 
 
 // Sounds (if available)
@@ -130,7 +130,7 @@ scene("gameover", (finalScore) => {
   localStorage.setItem("highScore", highScore)
 
   add([
-    sprite("gameover.bg"),
+    sprite("gameover_bg"),
     scale(width() / 640, height() / 360),
     pos(0, 0),
   ])
